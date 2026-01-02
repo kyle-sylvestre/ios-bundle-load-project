@@ -28,6 +28,6 @@ SDL_AppResult SDL_AppIterate(void *appstate)
 SDL_AppResult SDL_AppInit(void **appstate, int argc, char **argv)
 {
     window = SDL_CreateWindow("Test", 640, 480, 0);
-    cat = SDL_LoadBMP("cat.bmp"); // load bundled file using relative path
+    cat = SDL_LoadBMP("cat.bmp"); // failing line: load bundled file using relative path
     return SDL_APP_CONTINUE;
 }
